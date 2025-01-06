@@ -19,7 +19,6 @@ const assignStaffRoute = require("./routes/staffAssignmentRoute");
 const tourBigRoute = require("./routes/tourBigRoute");
 const discountCodeRoute = require("./routes/discountCodeRoute");
 
-const vnpayRoute = require("./routes/vnPayRoute");
 const cron = require("node-cron");
 const tourModel = require("./models/tourModel");
 const crypto = require("crypto");
@@ -421,7 +420,6 @@ app.use("/api/email", emailRoute);
 app.use("/api/blogs", blogRoute);
 app.use("/api/assignStaff", assignStaffRoute);
 app.use("/api/discountCode", discountCodeRoute);
-app.use("/api/vnpay", vnpayRoute);
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running at PORT ${PORT}`);
