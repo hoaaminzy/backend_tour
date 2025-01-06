@@ -36,7 +36,7 @@ const path = require("path");
 app.use(express.json({ limit: "50mb" })); // Phân tích JSON
 app.use(express.urlencoded({ limit: "50mb", extended: false })); // Phân tích URL-encoded
 
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = ["https://tourdulich.netlify.app", "https://quanlitourdulich.netlify.app"];
 
 // Thiết lập cron job chạy mỗi ngày lúc 00:00
 // mm:hh d/m/w
